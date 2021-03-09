@@ -26,16 +26,17 @@ public class RandomGuess {
 		int guess;
 		int i;
 		
-		do {
 			for(i=0; i<tries;i++) {			//For loop to iterate 5 time if the user guess is wrong
 				System.out.println("Your Guess: ");
 				guess= input.nextInt();
 				
-				if(Math.abs(guess-correctAnswer)<=10) {				//If the guess is within 10 then the do while loop stops
+				if(Math.abs(guess-correctAnswer)<=10) {				//If the guess is within 10 then it will stop and show results
 					System.out.println("You were within range of 10 of correct answer. The correct number is "+correctAnswer);
+					break;
 				}	
 				else if(correctAnswer==guess) {			//If the guess is same then it program will print it and stop
 				System.out.println("Spot on! Your guess of "+guess+" is correct"+correctAnswer);
+				break;
 				}
 				else {			//In other cases user will be asked to input another guess
 				System.out.println("Your guess of "+guess+" is out of range. Try Again");
@@ -44,8 +45,6 @@ public class RandomGuess {
 				if (i==tries) {			
 				System.out.println("\nSorry! Your ran out of all your tries. The correct Number is: "+correctAnswer);	
 			}
-		
-	}while(i<tries);
 }
 	
 	/*
