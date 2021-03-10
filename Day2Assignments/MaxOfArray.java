@@ -9,7 +9,7 @@ package com.ss.week1.day2;
 public class MaxOfArray {
 
 	/**
-	 * Method which uses for loop to find out the max elemnt of the 2d array
+	 * Method which uses for loop to find out the max elemnt and index of the 2d array 
 	 * 
 	 * @param arr
 	 */
